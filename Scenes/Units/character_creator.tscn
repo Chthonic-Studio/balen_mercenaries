@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b2ktp6f6wagio"]
+
+[ext_resource type="Script" uid="uid://cee06j16mhrqe" path="res://Scripts/Globals/character_creator.gd" id="1_mdij1"]
+
+[node name="CharacterCreator" type="CanvasLayer" unique_id=685604845]
+layer = 100
+script = ExtResource("1_mdij1")
+
+[node name="UI" type="PanelContainer" parent="." unique_id=1651365878]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=308588242]
+layout_mode = 2
+
+[node name="ControlsContainer" type="VBoxContainer" parent="UI/HBoxContainer" unique_id=1352719565]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="UI/HBoxContainer/ControlsContainer" unique_id=1860065844]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Character Creator"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI/HBoxContainer/ControlsContainer" unique_id=207525521]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Categories" type="VBoxContainer" parent="UI/HBoxContainer/ControlsContainer/ScrollContainer" unique_id=1278630163]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="Control" parent="UI/HBoxContainer" unique_id=1075211]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PreviewContainer" type="CenterContainer" parent="UI/HBoxContainer/MarginContainer" unique_id=1621137232]
+layout_mode = 0
+anchor_left = 0.17515433
+anchor_top = 0.123333335
+anchor_right = 0.9467593
+anchor_bottom = 0.83444446
+offset_left = -1.5258789e-05
+size_flags_horizontal = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterPreview" type="Node2D" parent="UI/HBoxContainer/MarginContainer/PreviewContainer" unique_id=1866065232]
+scale = Vector2(20, 20)

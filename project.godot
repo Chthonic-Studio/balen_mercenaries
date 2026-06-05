@@ -15,6 +15,11 @@ run/main_scene="uid://swbgqimxbut5"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+CharacterCreator="*uid://b2ktp6f6wagio"
+GameManager="*uid://c86acm2oyv2it"
+
 [display]
 
 window/size/viewport_width=1600

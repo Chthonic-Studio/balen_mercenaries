@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://d1ottivba2g6y"]
+
+[ext_resource type="Texture2D" uid="uid://es7g2fuygbvv" path="res://Assets/Char_Creation/spritesheets/Bag1/Idle.png" id="1_2smdv"]
+[ext_resource type="Texture2D" uid="uid://b4p7154qplg0y" path="res://Assets/Char_Creation/spritesheets/Mount1/Idle.png" id="2_vley5"]
+[ext_resource type="Texture2D" uid="uid://b2a7ocv7x3xb2" path="res://Assets/Char_Creation/spritesheets/NakedBody/Idle.png" id="3_ly5gf"]
+[ext_resource type="Texture2D" uid="uid://c4e8cys2fxkib" path="res://Assets/Char_Creation/spritesheets/Legs1/Idle.png" id="4_7pufk"]
+[ext_resource type="Texture2D" uid="uid://b20cb1y1l5hui" path="res://Assets/Char_Creation/spritesheets/Shoes1/Idle.png" id="5_ty566"]
+[ext_resource type="Texture2D" uid="uid://cb447w4v2obmo" path="res://Assets/Char_Creation/spritesheets/Chest2/Idle.png" id="6_0t1e4"]
+
+[node name="CharacterTemplate" type="Node2D" unique_id=2018772505]
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=663669599]
+texture = ExtResource("1_2smdv")
+hframes = 15
+vframes = 8
+
+[node name="Mount" type="Sprite2D" parent="." unique_id=1832956231]
+texture = ExtResource("2_vley5")
+hframes = 15
+vframes = 8
+
+[node name="NakedBody" type="Sprite2D" parent="." unique_id=1819807698]
+self_modulate = Color(1, 0.82, 0.82, 1)
+texture = ExtResource("3_ly5gf")
+hframes = 15
+vframes = 8
+
+[node name="Legs" type="Sprite2D" parent="." unique_id=1349999231]
+self_modulate = Color(1, 0.26999998, 0.26999998, 1)
+texture = ExtResource("4_7pufk")
+hframes = 15
+vframes = 8
+
+[node name="Shoes" type="Sprite2D" parent="." unique_id=904065485]
+texture = ExtResource("5_ty566")
+hframes = 15
+vframes = 8
+
+[node name="Chest" type="Sprite2D" parent="." unique_id=851305249]
+modulate = Color(0.3019608, 1, 1, 1)
+texture = ExtResource("6_0t1e4")
+hframes = 15
+vframes = 8
+
+[node name="Belt" type="Sprite2D" parent="." unique_id=1892557472]
+hframes = 15
+vframes = 8
+
+[node name="Hands" type="Sprite2D" parent="." unique_id=199509663]
+hframes = 15
+vframes = 8
+
+[node name="Head" type="Sprite2D" parent="." unique_id=1137852089]
+hframes = 15
+vframes = 8
+
+[node name="Bag" type="Sprite2D" parent="." unique_id=1146933512]
+self_modulate = Color(0.54, 0.54, 0.54, 1)
+texture = ExtResource("1_2smdv")
+hframes = 15
+vframes = 8
+
+[node name="Shield" type="Sprite2D" parent="." unique_id=1262747641]
+hframes = 15
+vframes = 8
+
+[node name="Melee" type="Sprite2D" parent="." unique_id=2092848870]
+hframes = 15
+vframes = 8
+
+[node name="Offhand" type="Sprite2D" parent="." unique_id=1368466678]
+hframes = 15
+vframes = 8
+
+[node name="Ranged" type="Sprite2D" parent="." unique_id=79899511]
+hframes = 15
+vframes = 8
+
+[node name="Magic" type="Sprite2D" parent="." unique_id=382913834]
+hframes = 15
+vframes = 8
+
+[node name="Effect" type="Sprite2D" parent="." unique_id=1864579002]
+hframes = 15
+vframes = 8
+
+[node name="Slash" type="Sprite2D" parent="." unique_id=14613760]
+hframes = 15
+vframes = 8
+
+[node name="Special" type="Sprite2D" parent="." unique_id=83503305]
+hframes = 15
+vframes = 8
