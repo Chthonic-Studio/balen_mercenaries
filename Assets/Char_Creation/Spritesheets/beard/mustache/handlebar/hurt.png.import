@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk6cab3tq4gcn"
-path="res://.godot/imported/hurt.png-86fbd6882ef12df34275e061a5d9dc25.ctex"
+path="res://.godot/imported/hurt.png-573954aa80c4a4583f71ea8ed8cdff12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/handlebar/hurt.png"
-dest_files=["res://.godot/imported/hurt.png-86fbd6882ef12df34275e061a5d9dc25.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/handlebar/hurt.png"
+dest_files=["res://.godot/imported/hurt.png-573954aa80c4a4583f71ea8ed8cdff12.ctex"]
 
 [params]
 

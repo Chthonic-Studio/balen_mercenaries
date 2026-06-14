@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1etc7qqs78if"
-path="res://.godot/imported/shoot.png-94352dda69371fcae74d47a02dc044ed.ctex"
+path="res://.godot/imported/shoot.png-25b1508aaa1636ccdc5aad9c0c81a8bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/horseshoe/shoot.png"
-dest_files=["res://.godot/imported/shoot.png-94352dda69371fcae74d47a02dc044ed.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/horseshoe/shoot.png"
+dest_files=["res://.godot/imported/shoot.png-25b1508aaa1636ccdc5aad9c0c81a8bb.ctex"]
 
 [params]
 

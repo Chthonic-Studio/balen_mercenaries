@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6c776gm5tf8o"
-path="res://.godot/imported/sit.png-32fc1571390b07be1bf0c93f0573eade.ctex"
+path="res://.godot/imported/sit.png-7f73b0046b34400444a7e058b028dd11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/child/sit.png"
-dest_files=["res://.godot/imported/sit.png-32fc1571390b07be1bf0c93f0573eade.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/child/sit.png"
+dest_files=["res://.godot/imported/sit.png-7f73b0046b34400444a7e058b028dd11.ctex"]
 
 [params]
 

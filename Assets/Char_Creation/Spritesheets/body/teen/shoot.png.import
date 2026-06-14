@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jqhgyvb8msti"
-path="res://.godot/imported/shoot.png-c5ead5de839e4cb1fb4e66ca323bc48f.ctex"
+path="res://.godot/imported/shoot.png-2ca6208d5d737eb4d421a9137c3a0c84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/teen/shoot.png"
-dest_files=["res://.godot/imported/shoot.png-c5ead5de839e4cb1fb4e66ca323bc48f.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/teen/shoot.png"
+dest_files=["res://.godot/imported/shoot.png-2ca6208d5d737eb4d421a9137c3a0c84.ctex"]
 
 [params]
 

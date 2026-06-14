@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgyg7ovi4pik8"
-path="res://.godot/imported/thrust.png-7ff931a5a76706f3dfc5d7ecbb864ada.ctex"
+path="res://.godot/imported/thrust.png-e9b5c0d9f739dd2bd8bc130141125be4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/female/thrust.png"
-dest_files=["res://.godot/imported/thrust.png-7ff931a5a76706f3dfc5d7ecbb864ada.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/female/thrust.png"
+dest_files=["res://.godot/imported/thrust.png-e9b5c0d9f739dd2bd8bc130141125be4.ctex"]
 
 [params]
 

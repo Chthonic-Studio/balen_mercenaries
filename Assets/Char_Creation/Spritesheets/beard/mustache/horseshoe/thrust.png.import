@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b06pgtpk3ans6"
-path="res://.godot/imported/thrust.png-f321fc37a3f94d9e416399e220b97e8d.ctex"
+path="res://.godot/imported/thrust.png-2ce9b698207cc80672582775eb6bf4a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/horseshoe/thrust.png"
-dest_files=["res://.godot/imported/thrust.png-f321fc37a3f94d9e416399e220b97e8d.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/horseshoe/thrust.png"
+dest_files=["res://.godot/imported/thrust.png-2ce9b698207cc80672582775eb6bf4a8.ctex"]
 
 [params]
 

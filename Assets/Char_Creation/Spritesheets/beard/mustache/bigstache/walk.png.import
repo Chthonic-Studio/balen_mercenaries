@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0cka572yf4t7"
-path="res://.godot/imported/walk.png-b99fc65f26d569f447210c49b8f0517f.ctex"
+path="res://.godot/imported/walk.png-5367375c7a4b0b637888c33f61ad9fb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/bigstache/walk.png"
-dest_files=["res://.godot/imported/walk.png-b99fc65f26d569f447210c49b8f0517f.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/bigstache/walk.png"
+dest_files=["res://.godot/imported/walk.png-5367375c7a4b0b637888c33f61ad9fb8.ctex"]
 
 [params]
 

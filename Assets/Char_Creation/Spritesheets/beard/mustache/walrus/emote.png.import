@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddy5mibl1c4h"
-path="res://.godot/imported/emote.png-8bd9a490814dabf65cd4f179c8d5a9d2.ctex"
+path="res://.godot/imported/emote.png-047d885c5f1180995a4b31313e844758.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/walrus/emote.png"
-dest_files=["res://.godot/imported/emote.png-8bd9a490814dabf65cd4f179c8d5a9d2.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/walrus/emote.png"
+dest_files=["res://.godot/imported/emote.png-047d885c5f1180995a4b31313e844758.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6e16mbhnuqii"
-path="res://.godot/imported/sit.png-d652d62f462e391815808c81a43f50ed.ctex"
+path="res://.godot/imported/sit.png-f4b558b1db2088b3cb167660bf73a54e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/chevron/sit.png"
-dest_files=["res://.godot/imported/sit.png-d652d62f462e391815808c81a43f50ed.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/chevron/sit.png"
+dest_files=["res://.godot/imported/sit.png-f4b558b1db2088b3cb167660bf73a54e.ctex"]
 
 [params]
 

@@ -116,7 +116,7 @@ func _collect_feet_options(variant: String) -> Array[String]:
 	var base := Definitions.SPRITES_BASE_PATH + "/feet"
 	var variant_suffix := "/" + variant
 	for category in ["boots", "sandals", "shoes", "plate"]:
-		var path := base + "/" + category + variant_suffix
+		var path = base + "/" + category + variant_suffix
 		if ResourceLoader.exists(path + "/idle.png"):
 			results.append("feet/" + category + variant_suffix)
 		elif ResourceLoader.exists(path + "/idle/"):

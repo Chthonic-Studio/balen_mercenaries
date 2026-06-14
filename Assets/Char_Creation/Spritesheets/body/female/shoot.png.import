@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u8mwgqkipmah"
-path="res://.godot/imported/shoot.png-1bc95af13dc7a12666ea84dff1cca4ef.ctex"
+path="res://.godot/imported/shoot.png-a72faf6074daabccdb1441d7921de6a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/female/shoot.png"
-dest_files=["res://.godot/imported/shoot.png-1bc95af13dc7a12666ea84dff1cca4ef.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/female/shoot.png"
+dest_files=["res://.godot/imported/shoot.png-a72faf6074daabccdb1441d7921de6a2.ctex"]
 
 [params]
 

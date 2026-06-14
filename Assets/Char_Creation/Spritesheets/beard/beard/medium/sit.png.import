@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi0ry3r3a284x"
-path="res://.godot/imported/sit.png-73fe28e183be30b81db833f13b9bee56.ctex"
+path="res://.godot/imported/sit.png-1da7940c615a1929fda652f5633f0243.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/beard/medium/sit.png"
-dest_files=["res://.godot/imported/sit.png-73fe28e183be30b81db833f13b9bee56.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/beard/medium/sit.png"
+dest_files=["res://.godot/imported/sit.png-1da7940c615a1929fda652f5633f0243.ctex"]
 
 [params]
 

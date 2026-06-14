@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqnibgvu57un7"
-path="res://.godot/imported/spellcast.png-ae06ce06b57c483d23aaf32dbcd8be15.ctex"
+path="res://.godot/imported/spellcast.png-bfc195b36fe81debebd884bfe3e166e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/bigstache/spellcast.png"
-dest_files=["res://.godot/imported/spellcast.png-ae06ce06b57c483d23aaf32dbcd8be15.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/bigstache/spellcast.png"
+dest_files=["res://.godot/imported/spellcast.png-bfc195b36fe81debebd884bfe3e166e6.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7ybo3vw6fwbc"
-path="res://.godot/imported/climb.png-964fdb7caaa16389b678704db0f867e9.ctex"
+path="res://.godot/imported/climb.png-c2a3626a0700a6764351a27d38013523.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/female/climb.png"
-dest_files=["res://.godot/imported/climb.png-964fdb7caaa16389b678704db0f867e9.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/female/climb.png"
+dest_files=["res://.godot/imported/climb.png-c2a3626a0700a6764351a27d38013523.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdrqlks0nycg7"
-path="res://.godot/imported/skeleton.png-186144452d669608f26f6e2f63da90a4.ctex"
+path="res://.godot/imported/spellcast.png-a12c5d3fd741520a1505132c113dcd82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/head/skeleton/spellcast/skeleton.png"
-dest_files=["res://.godot/imported/skeleton.png-186144452d669608f26f6e2f63da90a4.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/head/skeleton/spellcast.png"
+dest_files=["res://.godot/imported/spellcast.png-a12c5d3fd741520a1505132c113dcd82.ctex"]
 
 [params]
 

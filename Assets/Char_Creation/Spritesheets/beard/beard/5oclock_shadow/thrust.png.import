@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfl42bc015q0y"
-path="res://.godot/imported/thrust.png-eb8fe142634c3a1d9e5f276fc4b3831e.ctex"
+path="res://.godot/imported/thrust.png-7fb32b379d251ac24a1686a7abe66d5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/beard/5oclock_shadow/thrust.png"
-dest_files=["res://.godot/imported/thrust.png-eb8fe142634c3a1d9e5f276fc4b3831e.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/beard/5oclock_shadow/thrust.png"
+dest_files=["res://.godot/imported/thrust.png-7fb32b379d251ac24a1686a7abe66d5b.ctex"]
 
 [params]
 

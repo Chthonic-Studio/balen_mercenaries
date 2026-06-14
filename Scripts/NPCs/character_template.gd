@@ -49,4 +49,3 @@ func play_animation(anim_name: String, direction: String = "down") -> void:
 
 func get_appearance() -> CharacterAppearanceComponent:
 	return _appearance
-

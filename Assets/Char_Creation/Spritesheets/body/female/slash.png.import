@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwccxqi71nvad"
-path="res://.godot/imported/slash.png-103d478b00091a8edc45bf323fe35a35.ctex"
+path="res://.godot/imported/slash.png-f4f0174fa1a3bd4f15810df8a386b63f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/female/slash.png"
-dest_files=["res://.godot/imported/slash.png-103d478b00091a8edc45bf323fe35a35.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/female/slash.png"
+dest_files=["res://.godot/imported/slash.png-f4f0174fa1a3bd4f15810df8a386b63f.ctex"]
 
 [params]
 

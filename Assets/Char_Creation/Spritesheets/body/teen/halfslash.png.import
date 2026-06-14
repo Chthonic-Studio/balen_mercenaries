@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x0t2l177iep2"
-path="res://.godot/imported/halfslash.png-ff66e7a27de51b58ff9c167b7889716f.ctex"
+path="res://.godot/imported/halfslash.png-a767cc759c2e671483d4b6e3ab4da59d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/bodies/teen/halfslash.png"
-dest_files=["res://.godot/imported/halfslash.png-ff66e7a27de51b58ff9c167b7889716f.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/body/teen/halfslash.png"
+dest_files=["res://.godot/imported/halfslash.png-a767cc759c2e671483d4b6e3ab4da59d.ctex"]
 
 [params]
 

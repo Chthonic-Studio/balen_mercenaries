@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba38e8k8dhib"
-path="res://.godot/imported/idle.png-96aca822a494f6f2b87b2410727ce8d5.ctex"
+path="res://.godot/imported/idle.png-5fae42351850b415e053fea55f1f061d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/french/idle.png"
-dest_files=["res://.godot/imported/idle.png-96aca822a494f6f2b87b2410727ce8d5.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/french/idle.png"
+dest_files=["res://.godot/imported/idle.png-5fae42351850b415e053fea55f1f061d.ctex"]
 
 [params]
 

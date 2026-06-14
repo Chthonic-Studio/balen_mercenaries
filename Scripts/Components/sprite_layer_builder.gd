@@ -27,7 +27,7 @@ static func build(base_path: String, fps: float = 8.0) -> SpriteFrames:
 	frames.remove_animation("default")
 
 	for anim_name in Definitions.LPC_ANIMATION_FRAMES.keys():
-		var png_path := base_path + "/" + anim_name + ".png"
+		var png_path = base_path + "/" + anim_name + ".png"
 		if not ResourceLoader.exists(png_path):
 			continue
 
@@ -46,7 +46,7 @@ static func build(base_path: String, fps: float = 8.0) -> SpriteFrames:
 
 		for dir_name in Definitions.LPC_DIRECTION_ROWS.keys():
 			var row: int = Definitions.LPC_DIRECTION_ROWS[dir_name]
-			var anim_key := anim_name + "_" + dir_name
+			var anim_key = anim_name + "_" + dir_name
 
 			frames.add_animation(anim_key)
 			frames.set_animation_loop(anim_key, true)
@@ -82,7 +82,7 @@ static func build_single(png_path: String, anim_name: String, fps: float = 8.0) 
 
 	for dir_name in Definitions.LPC_DIRECTION_ROWS.keys():
 		var row := Definitions.LPC_DIRECTION_ROWS[dir_name]
-		var anim_key := anim_name + "_" + dir_name
+		var anim_key = anim_name + "_" + dir_name
 
 		frames.add_animation(anim_key)
 		frames.set_animation_loop(anim_key, true)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qecf8h4b3pf6"
-path="res://.godot/imported/slash.png-1f51278dd7c0f7fbcc835619d6402594.ctex"
+path="res://.godot/imported/slash.png-306d20fa0e1c37049bca800134005c68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/french/slash.png"
-dest_files=["res://.godot/imported/slash.png-1f51278dd7c0f7fbcc835619d6402594.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/french/slash.png"
+dest_files=["res://.godot/imported/slash.png-306d20fa0e1c37049bca800134005c68.ctex"]
 
 [params]
 

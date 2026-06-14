@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbhssflqi82da"
-path="res://.godot/imported/walk.png-7d4be17824b501bd7aecd519135fe93c.ctex"
+path="res://.godot/imported/walk.png-89fd7336688bda17cf600dc25f9e8d61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/beard/winter/female/walk.png"
-dest_files=["res://.godot/imported/walk.png-7d4be17824b501bd7aecd519135fe93c.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/beard/winter/female/walk.png"
+dest_files=["res://.godot/imported/walk.png-89fd7336688bda17cf600dc25f9e8d61.ctex"]
 
 [params]
 

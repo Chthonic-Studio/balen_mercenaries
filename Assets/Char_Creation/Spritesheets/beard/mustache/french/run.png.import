@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://20b6cdsukljl"
-path="res://.godot/imported/run.png-7107ceb6a12ed8f5680260054d72fd94.ctex"
+path="res://.godot/imported/run.png-46c374ea616d366d84d6bf192ce3c7fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/french/run.png"
-dest_files=["res://.godot/imported/run.png-7107ceb6a12ed8f5680260054d72fd94.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/french/run.png"
+dest_files=["res://.godot/imported/run.png-46c374ea616d366d84d6bf192ce3c7fa.ctex"]
 
 [params]
 

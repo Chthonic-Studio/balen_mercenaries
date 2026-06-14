@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://couid2lmfbk1b"
-path="res://.godot/imported/walk.png-43ab990af7c128ecca4c733fb91d3c37.ctex"
+path="res://.godot/imported/walk.png-6b5ec4146037a3112cc719fc4abbecb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/horseshoe/walk.png"
-dest_files=["res://.godot/imported/walk.png-43ab990af7c128ecca4c733fb91d3c37.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/horseshoe/walk.png"
+dest_files=["res://.godot/imported/walk.png-6b5ec4146037a3112cc719fc4abbecb0.ctex"]
 
 [params]
 

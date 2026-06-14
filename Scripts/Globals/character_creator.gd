@@ -6,15 +6,17 @@
 extends CanvasLayer
 
 @onready var _player:            Player          = $UI/Control/MarginContainer/PreviewContainer/Player
-@onready var _hair_color_panel:  HairPanel       = $UI/Control/ControlsContainer/LeftVbox/HairPanel
-@onready var _skin_tone_panel:   SkinTonePanel   = $UI/Control/ControlsContainer/LeftVbox/SkinTonePanel
-@onready var _hair_style_panel:  HairStylePanel  = $UI/Control/ControlsContainer/LeftVbox/HairStylePanel
-@onready var _body_type_panel:   BodyTypePanel   = $UI/Control/ControlsContainer/LeftVbox/BodyTypePanel
+@onready var _hair_color_panel:  HairPanel       = $UI/Control/ControlsContainer/ScrollContainer/LeftVbox/HairPanel
+@onready var _skin_tone_panel:   SkinTonePanel   = $UI/Control/ControlsContainer/ScrollContainer/LeftVbox/SkinTonePanel
+@onready var _hair_style_panel:  HairStylePanel  = $UI/Control/ControlsContainer/ScrollContainer/LeftVbox/HairStylePanel
+@onready var _body_type_panel:   BodyTypePanel   = $UI/Control/ControlsContainer/ScrollContainer/LeftVbox/BodyTypePanel
 
 ## Holds all current player choices; updated live as the player adjusts sliders.
 var player_data: CharacterData
 
 func _ready() -> void:
+	await get_tree().process_frame
+	
 	player_data = CharacterData.new()
 	_player.get_appearance().character_data = player_data
 
@@ -52,4 +54,3 @@ func _on_body_type_changed(body_type: String, head_type: String) -> void:
 	player_data.legs_layer  = "legs/pants/thin"      if is_thin else "legs/pants/male"
 	player_data.feet_layer  = "feet/boots/thin"      if is_thin else "feet/boots/male"
 	_player.get_appearance().apply()
-

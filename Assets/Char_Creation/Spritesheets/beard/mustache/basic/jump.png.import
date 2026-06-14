@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbrw8ouk1j4h4"
-path="res://.godot/imported/jump.png-bb9be30b7baf41e1c4936a67429279ce.ctex"
+path="res://.godot/imported/jump.png-92c4f7831d8c5df9870659d80d320554.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/mustache/basic/jump.png"
-dest_files=["res://.godot/imported/jump.png-bb9be30b7baf41e1c4936a67429279ce.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/mustache/basic/jump.png"
+dest_files=["res://.godot/imported/jump.png-92c4f7831d8c5df9870659d80d320554.ctex"]
 
 [params]
 

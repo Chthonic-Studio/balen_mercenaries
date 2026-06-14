@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6wrwwkikxxdy"
-path="res://.godot/imported/spellcast.png-a43de2694b5a700b6d2ae7b1e9e1a028.ctex"
+path="res://.godot/imported/spellcast.png-7456a31ee494a56defc68c4bf919cba7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Char_Creation/Spritesheets/beards/beard/winter/male/spellcast.png"
-dest_files=["res://.godot/imported/spellcast.png-a43de2694b5a700b6d2ae7b1e9e1a028.ctex"]
+source_file="res://Assets/Char_Creation/Spritesheets/beard/beard/winter/male/spellcast.png"
+dest_files=["res://.godot/imported/spellcast.png-7456a31ee494a56defc68c4bf919cba7.ctex"]
 
 [params]
 
