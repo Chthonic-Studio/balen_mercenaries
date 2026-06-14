@@ -33,8 +33,9 @@ func _ready() -> void:
 func _build_body_buttons() -> void:
 	for child in _body_grid.get_children():
 		child.queue_free()
-	var types: Array = allowed_body_types if not allowed_body_types.is_empty() \
-			else Definitions.BODY_TYPES
+	var types: Array = (allowed_body_types
+			if not allowed_body_types.is_empty()
+			else Definitions.BODY_TYPES)
 	# Keep _selected_body valid within the allowed set.
 	if not types.has(_selected_body):
 		_selected_body = types[0] if not types.is_empty() else "male"

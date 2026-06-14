@@ -51,6 +51,7 @@ func _on_body_type_changed(body_type: String, head_type: String) -> void:
 	_player.get_appearance().apply()
 
 func _on_confirm_pressed() -> void:
-	player_data.character_name = _name_input.text.strip_edges()
+	var name_text := _name_input.text.strip_edges()
+	player_data.character_name = name_text if not name_text.is_empty() else "Hero"
 	GameManager.player_data = player_data
 	get_tree().change_scene_to_file("res://Scenes/Debug/testing_grounds.tscn")
