@@ -11,6 +11,8 @@ func _ready() -> void:
 	if _movement:
 		_movement.facing_direction_changed.connect(_on_facing_direction_changed)
 		_movement.movement_state_changed.connect(_on_movement_state_changed)
+		
+		_movement.sprint_state_changed.connect(_on_sprint_state_changed)
 	
 	# Initial animation state update
 	_update_animation()
@@ -59,3 +61,12 @@ func _update_animation() -> void:
 	# Pass the action and direction separately to match the component's API
 	if _appearance.has_method("play_animation"):
 		_appearance.play_animation(action_prefix, _current_direction)
+
+func _on_sprint_state_changed(is_sprinting: bool) -> void:
+	# Choose your speed multiplier (e.g., 1.5x faster when sprinting)
+	var target_speed_scale: float = 3 if is_sprinting else 1.0
+	
+	# 3. Apply the speed scale to all sprite layers managed by the appearance component
+	for child in _appearance.get_children():
+		if child is AnimatedSprite2D:
+			child.speed_scale = target_speed_scale
