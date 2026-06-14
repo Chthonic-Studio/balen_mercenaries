@@ -4,5 +4,15 @@
 
 [resource]
 script = ExtResource("1_d2h8v")
-allowed_chest_male = Array[String]([""])
+archetype_name = "Civilian"
+allowed_chest_male = Array[String](["torso/leather/male", "torso/chainmail/male"])
+allowed_chest_female = Array[String](["torso/leather/female", "torso/chainmail/female"])
+allowed_legs_male = Array[String](["legs/pants/male", "legs/plate/male"])
+allowed_legs_female = Array[String](["legs/pants/thin", "legs/plate/thin"])
+allowed_head = Array[String]([])
+allowed_hair_male = Array[String]([])
+allowed_hair_female = Array[String]([])
+allowed_melee = Array[String]([])
+allowed_ranged = Array[String]([])
+allowed_shields = Array[String]([])
 metadata/_custom_type_script = "uid://bh7chyvrfm8n3"

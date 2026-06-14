@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://npc_base_scene"]
+
+[ext_resource type="Script" uid="uid://k840wr7wxhcw" path="res://Scripts/NPCs/character_template.gd" id="1_npcb"]
+[ext_resource type="Script" path="res://Scripts/Components/character_appearance_component.gd" id="2_npcappear"]
+[ext_resource type="Script" uid="uid://di32jacniht6q" path="res://Scripts/Player/player_movement.gd" id="3_npcmove"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_npcbase"]
+radius = 14.0
+height = 36.0
+
+[node name="NpcBase" type="CharacterBody2D" unique_id=20000001]
+script = ExtResource("1_npcb")
+
+[node name="Movement" type="Node" parent="." unique_id=20000002]
+script = ExtResource("3_npcmove")
+base_speed = 80.0
+sprint_speed = 130.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=20000003]
+shape = SubResource("CapsuleShape2D_npcbase")
+
+[node name="Appearance" type="Node2D" parent="." unique_id=20000004]
+script = ExtResource("2_npcappear")
+apply_on_ready = false

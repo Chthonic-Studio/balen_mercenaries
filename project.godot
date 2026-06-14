@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 CharacterCreator="*uid://b2ktp6f6wagio"
 GameManager="*uid://c86acm2oyv2it"
 Definitions="*uid://buywdjfbdqgsi"
+NpcGenerator="*res://Scripts/Globals/npc_generator.gd"
 
 [display]
 
