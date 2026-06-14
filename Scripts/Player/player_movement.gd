@@ -53,7 +53,7 @@ func _physics_process(delta: float) -> void:
 		return # Skip normal movement while dashing
 		
 	# 2. Get input
-	var input_direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	var input_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
 	# 3. Determine target speed (Sprint logic)
 	var current_target_speed = base_speed
