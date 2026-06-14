@@ -26,6 +26,11 @@ extends Node
 ## Playback speed passed to SpriteLayerBuilder (fps).
 @export var animation_fps: float = 8.0
 
+## Per-animation FPS overrides.  Keys are animation base names (e.g. "idle"),
+## values are the desired fps.  Entries here take priority over animation_fps.
+## Example: {"idle": 1.0, "run": 12.0}
+@export var animation_fps_overrides: Dictionary = {}
+
 ## If true, (re)apply appearance as soon as the node enters the tree.
 @export var apply_on_ready: bool = true
 
@@ -67,7 +72,7 @@ func apply() -> void:
 		if base_path.is_empty():
 			continue
 
-		var sprite_frames := SpriteLayerBuilder.build(base_path, animation_fps)
+		var sprite_frames := SpriteLayerBuilder.build(base_path, animation_fps, animation_fps_overrides)
 
 		# Only create the node if at least one animation was built.
 		if sprite_frames.get_animation_names().is_empty():

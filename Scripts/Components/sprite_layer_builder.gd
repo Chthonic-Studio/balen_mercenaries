@@ -19,10 +19,14 @@ extends RefCounted
 ## skipped so partial layers (e.g. shields that have only idle/walk)
 ## still work.
 ##
-## @param base_path  Absolute res:// path to the animation folder,
-##                   e.g. "res://Assets/Char_Creation/Spritesheets/body/male"
-## @param fps        Playback speed (frames per second) for all animations.
-static func build(base_path: String, fps: float = 8.0) -> SpriteFrames:
+## @param base_path      Absolute res:// path to the animation folder,
+##                       e.g. "res://Assets/Char_Creation/Spritesheets/body/male"
+## @param fps            Default playback speed (frames per second).
+## @param fps_overrides  Optional per-animation overrides, keyed by animation
+##                       base name (e.g. {"idle": 1.0, "run": 12.0}).
+##                       Overrides take priority over *fps*.
+static func build(base_path: String, fps: float = 8.0,
+		fps_overrides: Dictionary = {}) -> SpriteFrames:
 	var frames := SpriteFrames.new()
 	frames.remove_animation("default")
 
@@ -44,13 +48,15 @@ static func build(base_path: String, fps: float = 8.0) -> SpriteFrames:
 		if actual_cols > 0 and actual_cols != frame_count:
 			frame_count = actual_cols
 
+		var anim_fps: float = fps_overrides.get(anim_name, fps)
+
 		for dir_name in Definitions.LPC_DIRECTION_ROWS.keys():
 			var row: int = Definitions.LPC_DIRECTION_ROWS[dir_name]
 			var anim_key = anim_name + "_" + dir_name
 
 			frames.add_animation(anim_key)
 			frames.set_animation_loop(anim_key, true)
-			frames.set_animation_speed(anim_key, fps)
+			frames.set_animation_speed(anim_key, anim_fps)
 
 			for col in frame_count:
 				var region := Rect2(col * frame_w, row * frame_h, frame_w, frame_h)

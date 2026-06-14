@@ -37,6 +37,7 @@ shape = SubResource("CapsuleShape2D_vhayd")
 [node name="Appearance" type="Node2D" parent="." unique_id=177601015]
 script = ExtResource("3_appear")
 character_data = SubResource("CharacterData_default")
+animation_fps_overrides = {"idle": 1.0}
 apply_on_ready = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=596515986]

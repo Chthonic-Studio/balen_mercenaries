@@ -1,6 +1,10 @@
 ## BodyTypePanel
-## Allows the player to pick body type (male / female / teen / child)
-## and head variant.  Emits `changed` with the updated CharacterData.
+## Allows the player to pick body type and head variant.
+## Emits `changed` with the new body_type and head_type strings.
+##
+## Set `allowed_body_types` before the node is ready (e.g. as a scene
+## property override) to restrict which body type buttons are shown.
+## An empty array falls back to all entries in Definitions.BODY_TYPES.
 
 class_name BodyTypePanel extends PanelContainer
 
@@ -8,6 +12,9 @@ signal changed(body_type: String, head_type: String)
 
 @onready var _body_grid: GridContainer     = $VBoxContainer/BodyGrid
 @onready var _head_grid: GridContainer     = $VBoxContainer/HeadGrid
+
+## Optional allowlist of body types to display. Empty = show all.
+@export var allowed_body_types: PackedStringArray = []
 
 var _selected_body: String = "male"
 var _selected_head: String = "male"
@@ -24,7 +31,13 @@ func _ready() -> void:
 	_build_head_buttons()
 
 func _build_body_buttons() -> void:
-	for body_type in Definitions.BODY_TYPES:
+	for child in _body_grid.get_children():
+		child.queue_free()
+	var types = allowed_body_types if not allowed_body_types.is_empty() else Definitions.BODY_TYPES
+	# Keep _selected_body valid within the allowed set.
+	if not types.has(_selected_body):
+		_selected_body = types[0] if not types.is_empty() else "male"
+	for body_type in types:
 		var btn := Button.new()
 		btn.text = body_type.capitalize()
 		btn.toggle_mode = true

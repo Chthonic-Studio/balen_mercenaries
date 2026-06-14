@@ -6,6 +6,11 @@
 class_name CharacterData
 extends Resource
 
+# ---------- Identity -----------------------------------------------------
+
+## Display name chosen by the player or assigned to an NPC.
+@export var character_name: String = ""
+
 # ---------- Body & head --------------------------------------------------
 
 ## Body type folder name (see Definitions.BODY_TYPES).
