@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cn4s63ykeqheu" path="res://Scenes/Units/00_Player/player.tscn" id="2_h6j1s"]
 [ext_resource type="PackedScene" uid="uid://csv6fs3ehqwu4" path="res://Scenes/Units/UI/hair_panel.tscn" id="3_pogvn"]
 [ext_resource type="PackedScene" uid="uid://bxri5tutw6w1h" path="res://Scenes/Units/UI/skin_tone_panel.tscn" id="4_bahis"]
+[ext_resource type="PackedScene" path="res://Scenes/Units/UI/hair_style_panel.tscn" id="5_hstpn"]
+[ext_resource type="PackedScene" path="res://Scenes/Units/UI/body_type_panel.tscn" id="6_bdtpn"]
 
 [node name="CharacterCreator" type="CanvasLayer" unique_id=108103109]
 layer = 100
@@ -56,20 +58,22 @@ theme_override_font_sizes/font_size = 24
 text = "Character Creator"
 horizontal_alignment = 1
 
-[node name="LeftVbox" type="VBoxContainer" parent="UI/Control/ControlsContainer" unique_id=1510970925]
-layout_mode = 2
-theme_override_constants/separation = 5
-
-[node name="HairPanel" parent="UI/Control/ControlsContainer/LeftVbox" unique_id=2030983409 instance=ExtResource("3_pogvn")]
-layout_mode = 2
-
-[node name="SkinTonePanel" parent="UI/Control/ControlsContainer/LeftVbox" unique_id=1896997326 instance=ExtResource("4_bahis")]
-layout_mode = 2
-
 [node name="ScrollContainer" type="ScrollContainer" parent="UI/Control/ControlsContainer" unique_id=976690859]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Categories" type="VBoxContainer" parent="UI/Control/ControlsContainer/ScrollContainer" unique_id=1088804486]
+[node name="LeftVbox" type="VBoxContainer" parent="UI/Control/ControlsContainer/ScrollContainer" unique_id=1510970925]
 layout_mode = 2
-size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="BodyTypePanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=2030983408 instance=ExtResource("6_bdtpn")]
+layout_mode = 2
+
+[node name="SkinTonePanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=1896997326 instance=ExtResource("4_bahis")]
+layout_mode = 2
+
+[node name="HairStylePanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=2030983410 instance=ExtResource("5_hstpn")]
+layout_mode = 2
+
+[node name="HairPanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=2030983409 instance=ExtResource("3_pogvn")]
+layout_mode = 2
