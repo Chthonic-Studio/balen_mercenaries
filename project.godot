@@ -11,13 +11,12 @@ config_version=5
 [application]
 
 config/name="Balen Mercenaries"
-run/main_scene="uid://swbgqimxbut5"
+run/main_scene="uid://b2ktp6f6wagio"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-CharacterCreator="*uid://b2ktp6f6wagio"
 GameManager="*uid://c86acm2oyv2it"
 Definitions="*uid://buywdjfbdqgsi"
 NpcGenerator="*res://Scripts/Globals/npc_generator.gd"
