@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bxri5tutw6w1h"]
+
+[ext_resource type="Script" uid="uid://dlynaqvwr7e33" path="res://Scripts/UI/Character_Creator/skin_tone_panel.gd" id="1_yuhfq"]
+
+[node name="SkinTonePanel" type="PanelContainer" unique_id=1896997326]
+script = ExtResource("1_yuhfq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1286332868]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=292222899]
+layout_mode = 2
+text = "Skin Tone"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer" unique_id=1769578654]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 5

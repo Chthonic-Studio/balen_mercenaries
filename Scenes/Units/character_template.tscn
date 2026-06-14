@@ -1,3 +1,83 @@
 [gd_scene format=3 uid="uid://d1ottivba2g6y"]
 
-[node name="CharacterTemplate" type="Node2D" unique_id=2018772505]
+[ext_resource type="Script" uid="uid://k840wr7wxhcw" path="res://Scripts/NPCs/character_template.gd" id="1_shpcl"]
+
+[node name="CharacterTemplate" type="Node2D" unique_id=1326226658]
+scale = Vector2(50, 50)
+script = ExtResource("1_shpcl")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=681099413]
+hframes = 13
+vframes = 21
+
+[node name="Bag" type="Sprite2D" parent="." unique_id=1678449354]
+hframes = 13
+vframes = 21
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1700672491]
+hframes = 13
+vframes = 21
+
+[node name="Eyes" type="Sprite2D" parent="." unique_id=190931853]
+hframes = 13
+vframes = 21
+
+[node name="Shoes" type="Sprite2D" parent="." unique_id=1122010467]
+hframes = 13
+vframes = 21
+
+[node name="Legs" type="Sprite2D" parent="." unique_id=92337864]
+hframes = 13
+vframes = 21
+
+[node name="Chest" type="Sprite2D" parent="." unique_id=1095165380]
+hframes = 13
+vframes = 21
+
+[node name="Hands" type="Sprite2D" parent="." unique_id=217753910]
+hframes = 13
+vframes = 21
+
+[node name="Belt" type="Sprite2D" parent="." unique_id=1672173082]
+hframes = 13
+vframes = 21
+
+[node name="Hair" type="Sprite2D" parent="." unique_id=1542249088]
+hframes = 13
+vframes = 21
+
+[node name="Head" type="Sprite2D" parent="." unique_id=276099738]
+hframes = 13
+vframes = 21
+
+[node name="Shield" type="Sprite2D" parent="." unique_id=1454014945]
+hframes = 13
+vframes = 21
+
+[node name="Melee" type="Sprite2D" parent="." unique_id=685605787]
+hframes = 13
+vframes = 21
+
+[node name="Offhand" type="Sprite2D" parent="." unique_id=492681149]
+hframes = 13
+vframes = 21
+
+[node name="Ranged" type="Sprite2D" parent="." unique_id=1193152512]
+hframes = 13
+vframes = 21
+
+[node name="Magic" type="Sprite2D" parent="." unique_id=2077536248]
+hframes = 13
+vframes = 21
+
+[node name="Effect" type="Sprite2D" parent="." unique_id=60106257]
+hframes = 13
+vframes = 21
+
+[node name="Slash" type="Sprite2D" parent="." unique_id=1264545932]
+hframes = 13
+vframes = 21
+
+[node name="Special" type="Sprite2D" parent="." unique_id=837431415]
+hframes = 13
+vframes = 21

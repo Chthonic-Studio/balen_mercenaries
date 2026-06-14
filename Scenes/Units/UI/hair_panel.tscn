@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://csv6fs3ehqwu4"]
+
+[ext_resource type="Script" uid="uid://05ihqvnttfg0" path="res://Scripts/UI/Character_Creator/hair_panel.gd" id="1_fptn1"]
+
+[node name="HairPanel" type="PanelContainer" unique_id=2030983409]
+script = ExtResource("1_fptn1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2142457601]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=39090808]
+layout_mode = 2
+text = "Hair"
+horizontal_alignment = 1
+
+[node name="ColorPicker" type="ColorPicker" parent="VBoxContainer" unique_id=299053063]
+layout_mode = 2
+edit_alpha = false
+edit_intensity = false
+sampler_visible = false
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false

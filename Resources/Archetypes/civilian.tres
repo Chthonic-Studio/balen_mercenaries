@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CharacterArchetype" format=3 uid="uid://d1sw64s1eviex"]
+
+[ext_resource type="Script" uid="uid://bh7chyvrfm8n3" path="res://Scripts/NPCs/character_archetype.gd" id="1_d2h8v"]
+
+[resource]
+script = ExtResource("1_d2h8v")
+allowed_chest_male = Array[String]([""])
+metadata/_custom_type_script = "uid://bh7chyvrfm8n3"

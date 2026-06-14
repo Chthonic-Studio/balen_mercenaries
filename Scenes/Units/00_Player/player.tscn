@@ -1,13 +1,158 @@
 [gd_scene format=3 uid="uid://cn4s63ykeqheu"]
 
+[ext_resource type="Script" uid="uid://jtadmpx0f7lv" path="res://Scripts/Player/player.gd" id="1_e2msr"]
 [ext_resource type="Script" uid="uid://di32jacniht6q" path="res://Scripts/Player/player_movement.gd" id="1_ya1j7"]
+[ext_resource type="Texture2D" uid="uid://cd7hu3t1saymd" path="res://Assets/Char_Creation/Spritesheets/bodies/male/idle.png" id="2_qgcfx"]
+[ext_resource type="Texture2D" uid="uid://bu53aa4814peb" path="res://Assets/Char_Creation/Spritesheets/torso/leather/male/idle.png" id="3_e2msr"]
+[ext_resource type="Texture2D" uid="uid://bdefyexu6h3ff" path="res://Assets/Char_Creation/Spritesheets/head/male/idle.png" id="4_ijeo1"]
+[ext_resource type="Texture2D" uid="uid://da5sfjlarqxrw" path="res://Assets/Char_Creation/Spritesheets/hair/halfmessy/adult/idle.png" id="5_2qdxc"]
+[ext_resource type="Texture2D" uid="uid://b3j2id20xrqtt" path="res://Assets/Char_Creation/Spritesheets/eyes/idle.png" id="7_ijeo1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vhayd"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcgk5"]
+atlas = ExtResource("2_qgcfx")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76485"]
+atlas = ExtResource("2_qgcfx")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qoed"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lcgk5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76485")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncgm4"]
+atlas = ExtResource("3_e2msr")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhuc2"]
+atlas = ExtResource("3_e2msr")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3rj7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncgm4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhuc2")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjov3"]
+atlas = ExtResource("4_ijeo1")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5j2i"]
+atlas = ExtResource("4_ijeo1")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0yogo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjov3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5j2i")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qdxc"]
+atlas = ExtResource("5_2qdxc")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qoed"]
+atlas = ExtResource("5_2qdxc")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_st215"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qdxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qoed")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rj7s"]
+atlas = ExtResource("7_ijeo1")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yogo"]
+atlas = ExtResource("7_ijeo1")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oddaw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rj7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0yogo")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 1.0
+}]
+
 [node name="Player" type="CharacterBody2D" unique_id=1506849054]
+script = ExtResource("1_e2msr")
 
 [node name="Movement" type="Node" parent="." unique_id=1842331672]
 script = ExtResource("1_ya1j7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1232466361]
 shape = SubResource("CapsuleShape2D_vhayd")
+
+[node name="Skeleton" type="Node2D" parent="." unique_id=177601015]
+
+[node name="Body" type="AnimatedSprite2D" parent="Skeleton" unique_id=776493740]
+sprite_frames = SubResource("SpriteFrames_0qoed")
+animation = &"idle_down"
+
+[node name="Torso" type="AnimatedSprite2D" parent="Skeleton" unique_id=1202929772]
+sprite_frames = SubResource("SpriteFrames_3rj7s")
+animation = &"idle_down"
+
+[node name="Head" type="AnimatedSprite2D" parent="Skeleton" unique_id=1427585288]
+sprite_frames = SubResource("SpriteFrames_0yogo")
+animation = &"idle_down"
+frame_progress = 0.9537299
+
+[node name="Hair" type="AnimatedSprite2D" parent="Skeleton" unique_id=617809135]
+sprite_frames = SubResource("SpriteFrames_st215")
+animation = &"idle_down"
+
+[node name="Eyes" type="AnimatedSprite2D" parent="Skeleton" unique_id=1023205794]
+sprite_frames = SubResource("SpriteFrames_oddaw")
+animation = &"idle_down"
+frame_progress = 0.98017514
+
+[node name="Weapon" type="AnimatedSprite2D" parent="Skeleton" unique_id=821166877]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=596515986]
