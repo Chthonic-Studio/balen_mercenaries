@@ -1,94 +1,169 @@
-[gd_scene format=3 uid="uid://b2ktp6f6wagio"]
+[gd_scene format=3 uid="uid://ct54q68yrtn2r"]
 
-[ext_resource type="Script" uid="uid://cee06j16mhrqe" path="res://Scripts/Globals/character_creator.gd" id="1_mdij1"]
-[ext_resource type="PackedScene" uid="uid://cn4s63ykeqheu" path="res://Scenes/Units/00_Player/player.tscn" id="2_h6j1s"]
-[ext_resource type="PackedScene" uid="uid://csv6fs3ehqwu4" path="res://Scenes/Units/UI/hair_panel.tscn" id="3_pogvn"]
-[ext_resource type="PackedScene" uid="uid://bxri5tutw6w1h" path="res://Scenes/Units/UI/skin_tone_panel.tscn" id="4_bahis"]
-[ext_resource type="PackedScene" path="res://Scenes/Units/UI/hair_style_panel.tscn" id="5_hstpn"]
-[ext_resource type="PackedScene" path="res://Scenes/Units/UI/body_type_panel.tscn" id="6_bdtpn"]
+[ext_resource type="Script" uid="uid://dmebt0nufg7c1" path="res://Scripts/UI/Character_Creator/character_creation_system.gd" id="1_mdij1"]
+[ext_resource type="PackedScene" uid="uid://ki7iemhhu05j" path="res://Scenes/Units/character_visuals.tscn" id="2_h6j1s"]
 
-[node name="CharacterCreator" type="CanvasLayer" unique_id=108103109]
-layer = 100
-script = ExtResource("1_mdij1")
-
-[node name="UI" type="MarginContainer" parent="." unique_id=2042113532]
+[node name="CharacterCreationScene" type="Control" unique_id=1658170827]
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_mdij1")
+gameplay_scene_path = "uid://swbgqimxbut5"
 
-[node name="Control" type="Control" parent="UI" unique_id=118511501]
-layout_mode = 2
-
-[node name="MarginContainer" type="Control" parent="UI/Control" unique_id=1132750973]
-anchors_preset = 0
-anchor_left = 0.261875
-anchor_top = 0.06111111
-anchor_right = 0.9725
-anchor_bottom = 0.9111111
-size_flags_horizontal = 3
-metadata/_edit_use_anchors_ = true
-
-[node name="PreviewContainer" type="CenterContainer" parent="UI/Control/MarginContainer" unique_id=2033533608]
+[node name="Bg" type="ColorRect" parent="." unique_id=698463874]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
+color = Color(0.0823529, 0.0862745, 0.0980392, 1)
 
-[node name="Player" parent="UI/Control/MarginContainer/PreviewContainer" unique_id=1506849054 instance=ExtResource("2_h6j1s")]
-position = Vector2(309, 302)
-scale = Vector2(10, 10)
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1393189213]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
 
-[node name="ControlsContainer" type="VBoxContainer" parent="UI/Control" unique_id=871186937]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 0
-anchor_left = 0.0175
-anchor_top = 0.031111112
-anchor_right = 0.21875
-anchor_bottom = 0.9688889
-theme_override_constants/separation = 10
-metadata/_edit_use_anchors_ = true
-
-[node name="Title" type="Label" parent="UI/Control/ControlsContainer" unique_id=391122365]
+[node name="PreviewContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=924952167]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
-text = "Character Creator"
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="Title" type="Label" parent="HBoxContainer/PreviewContainer" unique_id=1019365296]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "CUSTOM CHARACTER CREATOR"
 horizontal_alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="UI/Control/ControlsContainer" unique_id=976690859]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer/PreviewContainer" unique_id=272278950]
+custom_minimum_size = Vector2(320, 320)
 layout_mode = 2
 size_flags_vertical = 3
+stretch = true
 
-[node name="LeftVbox" type="VBoxContainer" parent="UI/Control/ControlsContainer/ScrollContainer" unique_id=1510970925]
-layout_mode = 2
-theme_override_constants/separation = 5
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/PreviewContainer/SubViewportContainer" unique_id=420861577]
+handle_input_locally = false
+size = Vector2i(1007, 794)
+render_target_update_mode = 4
 
-[node name="BodyTypePanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=2030983408 instance=ExtResource("6_bdtpn")]
-layout_mode = 2
-allowed_body_types = PackedStringArray("male", "female")
+[node name="Camera" type="Camera2D" parent="HBoxContainer/PreviewContainer/SubViewportContainer/SubViewport" unique_id=701187294]
+position = Vector2(160, 160)
+zoom = Vector2(3.5, 3.5)
 
-[node name="SkinTonePanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=1896997326 instance=ExtResource("4_bahis")]
+[node name="CharacterVisuals" parent="HBoxContainer/PreviewContainer/SubViewportContainer/SubViewport" unique_id=17270639 instance=ExtResource("2_h6j1s")]
+position = Vector2(160, 160)
+
+[node name="EditorPanel" type="VBoxContainer" parent="HBoxContainer" unique_id=1201182727]
+custom_minimum_size = Vector2(480, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TabContainer" type="TabContainer" parent="HBoxContainer/EditorPanel" unique_id=1780545783]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Equipment" type="HBoxContainer" parent="HBoxContainer/EditorPanel/TabContainer" unique_id=603115598]
+layout_mode = 2
+theme_override_constants/separation = 15
+metadata/_tab_index = 0
+
+[node name="CategoryList" type="ItemList" parent="HBoxContainer/EditorPanel/TabContainer/Equipment" unique_id=975496711]
+custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 
-[node name="HairStylePanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=2030983410 instance=ExtResource("5_hstpn")]
+[node name="OptionList" type="ItemList" parent="HBoxContainer/EditorPanel/TabContainer/Equipment" unique_id=738052194]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Colors" type="GridContainer" parent="HBoxContainer/EditorPanel/TabContainer" unique_id=1482667001]
+visible = false
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+metadata/_tab_index = 1
+
+[node name="SkinLabel" type="Label" parent="HBoxContainer/EditorPanel/TabContainer/Colors" unique_id=625843553]
+layout_mode = 2
+text = "Skin Color Modulate"
+
+[node name="SkinColor" type="ColorPickerButton" parent="HBoxContainer/EditorPanel/TabContainer/Colors" unique_id=892492995]
+custom_minimum_size = Vector2(140, 40)
 layout_mode = 2
 
-[node name="HairPanel" parent="UI/Control/ControlsContainer/ScrollContainer/LeftVbox" unique_id=2030983409 instance=ExtResource("3_pogvn")]
+[node name="HairLabel" type="Label" parent="HBoxContainer/EditorPanel/TabContainer/Colors" unique_id=20843710]
+layout_mode = 2
+text = "Hair Color Modulate"
+
+[node name="HairColor" type="ColorPickerButton" parent="HBoxContainer/EditorPanel/TabContainer/Colors" unique_id=188999760]
+custom_minimum_size = Vector2(140, 40)
 layout_mode = 2
 
-[node name="NameLabel" type="Label" parent="UI/Control/ControlsContainer" unique_id=301000001]
+[node name="ChestLabel" type="Label" parent="HBoxContainer/EditorPanel/TabContainer/Colors" unique_id=1092104831]
 layout_mode = 2
-text = "Character Name"
+text = "Chest Armor Modulate"
 
-[node name="NameInput" type="LineEdit" parent="UI/Control/ControlsContainer" unique_id=301000002]
+[node name="ChestColor" type="ColorPickerButton" parent="HBoxContainer/EditorPanel/TabContainer/Colors" unique_id=109033885]
+custom_minimum_size = Vector2(140, 40)
 layout_mode = 2
-placeholder_text = "Enter name..."
-max_length = 32
 
-[node name="ConfirmButton" type="Button" parent="UI/Control/ControlsContainer" unique_id=301000003]
+[node name="Archetypes" type="VBoxContainer" parent="HBoxContainer/EditorPanel/TabContainer" unique_id=1219991947]
+visible = false
 layout_mode = 2
-text = "Enter Testing Grounds"
+theme_override_constants/separation = 20
+metadata/_tab_index = 2
+
+[node name="ArchLabel" type="Label" parent="HBoxContainer/EditorPanel/TabContainer/Archetypes" unique_id=1957465806]
+layout_mode = 2
+text = "Select Archetype Template"
+
+[node name="ArchetypeOption" type="OptionButton" parent="HBoxContainer/EditorPanel/TabContainer/Archetypes" unique_id=101822921]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="OverrideLabel" type="Label" parent="HBoxContainer/EditorPanel/TabContainer/Archetypes" unique_id=951229436]
+layout_mode = 2
+text = "Archetype Blending Overrides"
+
+[node name="OverrideHeadBtn" type="CheckButton" parent="HBoxContainer/EditorPanel/TabContainer/Archetypes" unique_id=1691020002]
+layout_mode = 2
+text = "Custom override: Head (Manual style)"
+
+[node name="OverrideChestBtn" type="CheckButton" parent="HBoxContainer/EditorPanel/TabContainer/Archetypes" unique_id=1727456018]
+layout_mode = 2
+text = "Custom override: Chest (Manual style)"
+
+[node name="Actions" type="HBoxContainer" parent="HBoxContainer/EditorPanel" unique_id=1716523505]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="RandomizeButton" type="Button" parent="HBoxContainer/EditorPanel/Actions" unique_id=665758286]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "🎲 Randomize Outfit"
+
+[node name="SaveButton" type="Button" parent="HBoxContainer/EditorPanel/Actions" unique_id=1181924767]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "💾 Export Config JSON"
+
+[node name="PlayButton" type="Button" parent="HBoxContainer/EditorPanel/Actions" unique_id=116192209]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.729412, 0.941176, 0.729412, 1)
+text = "🎮 Play Game!"

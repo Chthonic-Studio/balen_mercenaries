@@ -9,9 +9,4 @@ extends Node2D
 @onready var _player: Player = $Player
 
 func _ready() -> void:
-	if GameManager.player_data != null:
-		# Apply the appearance chosen during character creation.
-		# When null the player falls back to the default CharacterData
-		# embedded in player.tscn, so calling play_animation is always safe.
-		_player.get_appearance().character_data = GameManager.player_data
-	_player.play_animation("idle", "down")
+	pass

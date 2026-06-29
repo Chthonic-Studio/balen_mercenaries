@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://body_type_panel"]
+[gd_scene format=3 uid="uid://7r1tn10jhtgw"]
 
 [ext_resource type="Script" path="res://Scripts/UI/Character_Creator/body_type_panel.gd" id="1_bdtpn"]
 

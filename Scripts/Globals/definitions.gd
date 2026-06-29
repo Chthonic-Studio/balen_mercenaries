@@ -1,6 +1,8 @@
 extends Node
 
 # ---------- Skin / Colour -----------------------------------------------
+# Stores instantiated CharacterArchetype resources by their identifier
+var archetypes: Dictionary = {}
 
 const SKIN_TONES: Dictionary[String, Color] = {
 	"porcelain": Color("ffe0bd"),
@@ -12,84 +14,50 @@ const SKIN_TONES: Dictionary[String, Color] = {
 	"dark":      Color("321414"),
 }
 
-# ---------- LPC Spritesheet constants -----------------------------------
+func _ready() -> void:
+	register_default_archetypes()
 
-## Pixel size of a single frame in the standard LPC character sheets.
-const LPC_FRAME_SIZE: int = 64
+func register_default_archetypes() -> void:
+	# Define a Villager archetype
+	var villager = CharacterArchetype.new()
+	villager.archetype_name = "Town Villager"
+	villager.tag_identifiers = ["townsperson", "peaceful"]
+	villager.allowed_bodies = [1, 2]
+	villager.allowed_heads = [1, 2, 3, 4, 5]
+	villager.allowed_chests = [1, 2, 3]
+	villager.allowed_legs = [1, 2]
+	villager.allowed_shoes = [1, 2]
+	villager.movement_speed = 95.0
+	archetypes["Villager"] = villager
+	
+	# Define a Bandit Outlaw archetype
+	var bandit = CharacterArchetype.new()
+	bandit.archetype_name = "Bandit Outlaw"
+	bandit.tag_identifiers = ["hostile", "melee"]
+	bandit.allowed_bodies = [2, 3]
+	bandit.allowed_heads = [6, 8, 10, 11]
+	bandit.allowed_chests = [4, 5, 8]
+	bandit.allowed_legs = [3, 4]
+	bandit.allowed_shoes = [3]
+	bandit.allowed_melee = [2, 5, 8, 12]
+	bandit.movement_speed = 135.0
+	archetypes["Bandit"] = bandit
 
-## Sprite sheet base path (relative to res://)
-const SPRITES_BASE_PATH: String = "res://Assets/Char_Creation/Spritesheets"
+	# Define a Royal Guard archetype
+	var guard = CharacterArchetype.new()
+	guard.archetype_name = "Royal Castle Guard"
+	guard.tag_identifiers = ["defender", "armored"]
+	guard.allowed_bodies = [3]
+	guard.allowed_heads = [12, 14, 15]
+	guard.allowed_chests = [10, 12, 15]
+	guard.allowed_legs = [5, 6]
+	guard.allowed_shoes = [4]
+	guard.allowed_melee = [15, 18, 20]
+	guard.allowed_shields = [2, 3, 5]
+	guard.movement_speed = 115.0
+	archetypes["Guard"] = guard
 
-## Animation names present in the split-per-animation LPC sheets.
-## Each name maps to the expected number of frames per direction row.
-## The sheet has 4 rows: up (0), left (1), down (2), right (3).
-const LPC_ANIMATION_FRAMES: Dictionary[String, int] = {
-	"spellcast":   7,
-	"thrust":      8,
-	"walk":        9,
-	"slash":       6,
-	"shoot":      13,
-	"hurt":        6,
-	"idle":        2,
-	"run":         8,
-	"climb":       6,
-	"jump":        5,
-	"sit":         3,
-	"emote":       3,
-	"combat_idle": 2,
-	"backslash":   6,
-	"halfslash":   6,
-}
-
-## Direction row indices inside each LPC animation sheet (top→bottom).
-const LPC_DIRECTION_ROWS: Dictionary[String, int] = {
-	"up":    0,
-	"left":  1,
-	"down":  2,
-	"right": 3,
-}
-
-## Ordered list of layer names drawn back-to-front on a character.
-## A layer name of "" means that slot is disabled for a given character.
-const LAYER_ORDER: Array[String] = [
-	"body",
-	"head",
-	"eyes",
-	"torso",
-	"legs",
-	"feet",
-	"arms",
-	"shoulders",
-	"beard",
-	"hair_bg",   # background hair layer (long styles with bg/fg split)
-	"hat",
-	"hair_fg",   # foreground hair layer
-	"shield",
-	"weapon",
-]
-
-# ---------- Available body types ----------------------------------------
-
-## Body types that have a complete animation set (have idle + walk at minimum).
-const BODY_TYPES: Array[String] = [
-	"male",
-	"female",
-	"teen",
-	"child",
-]
-
-## Head type variants (must match folder names under head/).
-const HEAD_TYPES: Array[String] = [
-	"male",
-	"female",
-	"male_small",
-	"female_small",
-	"male_elderly",
-	"female_elderly",
-	"male_plump",
-	"male_gaunt",
-	"elderly_small",
-	"child",
-	"zombie",
-	"skeleton",
-]
+func get_archetype(id: String) -> CharacterArchetype:
+	if archetypes.has(id):
+		return archetypes[id]
+	return null

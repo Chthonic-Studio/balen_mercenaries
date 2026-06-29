@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://ki7iemhhu05j"]
+
+[ext_resource type="Script" uid="uid://b8arrbks7j71p" path="res://Scripts/Components/character_visuals.gd" id="1_ywss5"]
+
+[node name="CharacterVisuals" type="Node2D" unique_id=17270639]
+y_sort_enabled = true
+script = ExtResource("1_ywss5")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=829585995]
+hframes = 15
+vframes = 8
+
+[node name="Mount" type="Sprite2D" parent="." unique_id=1090638507]
+hframes = 15
+vframes = 8
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1269854023]
+hframes = 15
+vframes = 8
+
+[node name="Legs" type="Sprite2D" parent="." unique_id=409229903]
+hframes = 15
+vframes = 8
+
+[node name="Shoes" type="Sprite2D" parent="." unique_id=450960001]
+hframes = 15
+vframes = 8
+
+[node name="Chest" type="Sprite2D" parent="." unique_id=292582247]
+hframes = 15
+vframes = 8
+
+[node name="Belt" type="Sprite2D" parent="." unique_id=1753841844]
+hframes = 15
+vframes = 8
+
+[node name="Bag" type="Sprite2D" parent="." unique_id=609513948]
+hframes = 15
+vframes = 8
+
+[node name="Hands" type="Sprite2D" parent="." unique_id=1850972377]
+hframes = 15
+vframes = 8
+
+[node name="Head" type="Sprite2D" parent="." unique_id=2019107089]
+hframes = 15
+vframes = 8
+
+[node name="Melee" type="Sprite2D" parent="." unique_id=1647960833]
+hframes = 15
+vframes = 8
+
+[node name="Shield" type="Sprite2D" parent="." unique_id=1525366925]
+hframes = 15
+vframes = 8
+
+[node name="Effect" type="Sprite2D" parent="." unique_id=982673499]
+hframes = 15
+vframes = 8
